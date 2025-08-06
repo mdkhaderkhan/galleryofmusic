@@ -25,7 +25,6 @@ function Navbar({ className }: { className?: string }) {
         </Menu>
 
 
-        {/* Our Courses Dropdown */}
         <Menu setActive={setActive}>
           <MenuItem setActive={setActive} active={active} item="Our Courses">
             <div className="flex flex-col space-y-4 text-sm">
@@ -38,7 +37,6 @@ function Navbar({ className }: { className?: string }) {
           </MenuItem>
         </Menu>
 
-        {/* Contact Us */}
         <Menu setActive={setActive}>
           <Link href="/contact">
             <MenuItem setActive={setActive} active={active} item="Contact Us" />

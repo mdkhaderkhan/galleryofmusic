@@ -6,10 +6,9 @@ import { Spotlight } from '../component/ui/Spotlight'; // Make sure this exists
 export default function AdvanceCompositionPage() {
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      {/* Background spotlight effect */}
+    
       <Spotlight className="top-[-30%] left-[-30%] w-[140%] h-[140%] opacity-30 blur-3xl" fill="#8a2be2" />
 
-      {/* Floating lights */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {[...Array(25)].map((_, i) => (
           <div
@@ -26,7 +25,6 @@ export default function AdvanceCompositionPage() {
         ))}
       </div>
 
-      {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
